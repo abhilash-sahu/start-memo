@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com.fhlbatl.service.exposure" version="1.0" targetNamespace="http://com.fhlbatl.service.exposure">
+
+  <xs:element name="Exception" type="tns:Exception"/>
+
+  <xs:element name="calculateExposureFromSource" type="tns:calculateExposureFromSource"/>
+
+  <xs:element name="calculateExposureFromSourceNoQueue" type="tns:calculateExposureFromSourceNoQueue"/>
+
+  <xs:element name="calculateExposureFromSourceNoQueueResponse" type="tns:calculateExposureFromSourceNoQueueResponse"/>
+
+  <xs:element name="calculateExposureFromSourceResponse" type="tns:calculateExposureFromSourceResponse"/>
+
+  <xs:element name="calculateExposureMemoPost" type="tns:calculateExposureMemoPost"/>
+
+  <xs:element name="calculateExposureMemoPostResponse" type="tns:calculateExposureMemoPostResponse"/>
+
+  <xs:element name="calculateExposureResultsFromSource" type="tns:calculateExposureResultsFromSource"/>
+
+  <xs:element name="calculateExposureResultsFromSourceResponse" type="tns:calculateExposureResultsFromSourceResponse"/>
+
+  <xs:element name="calculateExposureResultsMemoPost" type="tns:calculateExposureResultsMemoPost"/>
+
+  <xs:element name="calculateExposureResultsMemoPostResponse" type="tns:calculateExposureResultsMemoPostResponse"/>
+
+  <xs:element name="calculateExposureResultsUsingAdvance" type="tns:calculateExposureResultsUsingAdvance"/>
+
+  <xs:element name="calculateExposureResultsUsingAdvanceResponse" type="tns:calculateExposureResultsUsingAdvanceResponse"/>
+
+  <xs:element name="calculateExposureResultsUsingLCV" type="tns:calculateExposureResultsUsingLCV"/>
+
+  <xs:element name="calculateExposureResultsUsingLCVResponse" type="tns:calculateExposureResultsUsingLCVResponse"/>
+
+  <xs:element name="calculateExposureUsingAdvance" type="tns:calculateExposureUsingAdvance"/>
+
+  <xs:element name="calculateExposureUsingAdvanceResponse" type="tns:calculateExposureUsingAdvanceResponse"/>
+
+  <xs:element name="calculateExposureUsingLCV" type="tns:calculateExposureUsingLCV"/>
+
+  <xs:element name="calculateExposureUsingLCVResponse" type="tns:calculateExposureUsingLCVResponse"/>
+
+  <xs:element name="checkStatus" type="tns:checkStatus"/>
+
+  <xs:element name="checkStatusResponse" type="tns:checkStatusResponse"/>
+
+  <xs:element name="getAdvancesDivAssets" type="tns:getAdvancesDivAssets"/>
+
+  <xs:element name="getAdvancesDivAssetsResponse" type="tns:getAdvancesDivAssetsResponse"/>
+
+  <xs:element name="getAffiliateLCV" type="tns:getAffiliateLCV"/>
+
+  <xs:element name="getAffiliateLCVResponse" type="tns:getAffiliateLCVResponse"/>
+
+  <xs:element name="getAffiliateReliance" type="tns:getAffiliateReliance"/>
+
+  <xs:element name="getAffiliateRelianceResponse" type="tns:getAffiliateRelianceResponse"/>
+
+  <xs:element name="getAllExposureCalculations" type="tns:getAllExposureCalculations"/>
+
+  <xs:element name="getAllExposureCalculationsResponse" type="tns:getAllExposureCalculationsResponse"/>
+
+  <xs:element name="getCashPledged" type="tns:getCashPledged"/>
+
+  <xs:element name="getCashPledgedResponse" type="tns:getCashPledgedResponse"/>
+
+  <xs:element name="getCollateralMaintenanceLevel" type="tns:getCollateralMaintenanceLevel"/>
+
+  <xs:element name="getCollateralMaintenanceLevelResponse" type="tns:getCollateralMaintenanceLevelResponse"/>
+
+  <xs:element name="getCollateralMarketValue" type="tns:getCollateralMarketValue"/>
+
+  <xs:element name="getCollateralMarketValueResponse" type="tns:getCollateralMarketValueResponse"/>
+
+  <xs:element name="getCorporateSettlements" type="tns:getCorporateSettlements"/>
+
+  <xs:element name="getCorporateSettlementsResponse" type="tns:getCorporateSettlementsResponse"/>
+
+  <xs:element name="getCreditAvailability" type="tns:getCreditAvailability"/>
+
+  <xs:element name="getCreditAvailabilityDivAssets" type="tns:getCreditAvailabilityDivAssets"/>
+
+  <xs:element name="getCreditAvailabilityDivAssetsResponse" type="tns:getCreditAvailabilityDivAssetsResponse"/>
+
+  <xs:element name="getCreditAvailabilityResponse" type="tns:getCreditAvailabilityResponse"/>
+
+  <xs:element name="getDIAOverdraft" type="tns:getDIAOverdraft"/>
+
+  <xs:element name="getDIAOverdraftResponse" type="tns:getDIAOverdraftResponse"/>
+
+  <xs:element name="getEstPrepaymentFees" type="tns:getEstPrepaymentFees"/>
+
+  <xs:element name="getEstPrepaymentFeesResponse" type="tns:getEstPrepaymentFeesResponse"/>
+
+  <xs:element name="getLCVDivAdvances" type="tns:getLCVDivAdvances"/>
+
+  <xs:element name="getLCVDivAdvancesResponse" type="tns:getLCVDivAdvancesResponse"/>
+
+  <xs:element name="getLCVDivCollateralMaintenanceLevel" type="tns:getLCVDivCollateralMaintenanceLevel"/>
+
+  <xs:element name="getLCVDivCollateralMaintenanceLevelResponse" type="tns:getLCVDivCollateralMaintenanceLevelResponse"/>
+
+  <xs:element name="getLCVDivProjTotalCollaterallExposure" type="tns:getLCVDivProjTotalCollaterallExposure"/>
+
+  <xs:element name="getLCVDivProjTotalCollaterallExposureResponse" type="tns:getLCVDivProjTotalCollaterallExposureResponse"/>
+
+  <xs:element name="getLCVDivTotalCollateralExposure" type="tns:getLCVDivTotalCollateralExposure"/>
+
+  <xs:element name="getLCVDivTotalCollateralExposureResponse" type="tns:getLCVDivTotalCollateralExposureResponse"/>
+
+  <xs:element name="getLCVExcess" type="tns:getLCVExcess"/>
+
+  <xs:element name="getLCVExcessResponse" type="tns:getLCVExcessResponse"/>
+
+  <xs:element name="getLHFSAdvance" type="tns:getLHFSAdvance"/>
+
+  <xs:element name="getLHFSAdvanceResponse" type="tns:getLHFSAdvanceResponse"/>
+
+  <xs:element name="getLHFSLCV" type="tns:getLHFSLCV"/>
+
+  <xs:element name="getLHFSLCVExcess" type="tns:getLHFSLCVExcess"/>
+
+  <xs:element name="getLHFSLCVExcessResponse" type="tns:getLHFSLCVExcessResponse"/>
+
+  <xs:element name="getLHFSLCVResponse" type="tns:getLHFSLCVResponse"/>
+
+  <xs:element name="getLetterOfCredit" type="tns:getLetterOfCredit"/>
+
+  <xs:element name="getLetterOfCreditCorporateSettlements" type="tns:getLetterOfCreditCorporateSettlements"/>
+
+  <xs:element name="getLetterOfCreditCorporateSettlementsResponse" type="tns:getLetterOfCreditCorporateSettlementsResponse"/>
+
+  <xs:element name="getLetterOfCreditResponse" type="tns:getLetterOfCreditResponse"/>
+
+  <xs:element name="getMPFCreditEnhancement" type="tns:getMPFCreditEnhancement"/>
+
+  <xs:element name="getMPFCreditEnhancementResponse" type="tns:getMPFCreditEnhancementResponse"/>
+
+  <xs:element name="getMemberLCV" type="tns:getMemberLCV"/>
+
+  <xs:element name="getMemberLCVResponse" type="tns:getMemberLCVResponse"/>
+
+  <xs:element name="getMemberStandaloneDerivativeExposure" type="tns:getMemberStandaloneDerivativeExposure"/>
+
+  <xs:element name="getMemberStandaloneDerivativeExposureResponse" type="tns:getMemberStandaloneDerivativeExposureResponse"/>
+
+  <xs:element name="getPortfolioLCVList" type="tns:getPortfolioLCVList"/>
+
+  <xs:element name="getPortfolioLCVListResponse" type="tns:getPortfolioLCVListResponse"/>
+
+  <xs:element name="getProjCollateralMaintenanceLevel" type="tns:getProjCollateralMaintenanceLevel"/>
+
+  <xs:element name="getProjCollateralMaintenanceLevelResponse" type="tns:getProjCollateralMaintenanceLevelResponse"/>
+
+  <xs:element name="getProjLCVExcess" type="tns:getProjLCVExcess"/>
+
+  <xs:element name="getProjLCVExcessResponse" type="tns:getProjLCVExcessResponse"/>
+
+  <xs:element name="getProjTotalCollateralExposure" type="tns:getProjTotalCollateralExposure"/>
+
+  <xs:element name="getProjTotalCollateralExposureDivAssets" type="tns:getProjTotalCollateralExposureDivAssets"/>
+
+  <xs:element name="getProjTotalCollateralExposureDivAssetsResponse" type="tns:getProjTotalCollateralExposureDivAssetsResponse"/>
+
+  <xs:element name="getProjTotalCollateralExposureResponse" type="tns:getProjTotalCollateralExposureResponse"/>
+
+  <xs:element name="getRemainingCreditAvailability" type="tns:getRemainingCreditAvailability"/>
+
+  <xs:element name="getRemainingCreditAvailabilityResponse" type="tns:getRemainingCreditAvailabilityResponse"/>
+
+  <xs:element name="getTotalAdvanceCollateral" type="tns:getTotalAdvanceCollateral"/>
+
+  <xs:element name="getTotalAdvanceCollateralResponse" type="tns:getTotalAdvanceCollateralResponse"/>
+
+  <xs:element name="getTotalAdvanceCredit" type="tns:getTotalAdvanceCredit"/>
+
+  <xs:element name="getTotalAdvanceCreditResponse" type="tns:getTotalAdvanceCreditResponse"/>
+
+  <xs:element name="getTotalAssets" type="tns:getTotalAssets"/>
+
+  <xs:element name="getTotalAssetsResponse" type="tns:getTotalAssetsResponse"/>
+
+  <xs:element name="getTotalCollateralExposure" type="tns:getTotalCollateralExposure"/>
+
+  <xs:element name="getTotalCollateralExposureDivAssets" type="tns:getTotalCollateralExposureDivAssets"/>
+
+  <xs:element name="getTotalCollateralExposureDivAssetsResponse" type="tns:getTotalCollateralExposureDivAssetsResponse"/>
+
+  <xs:element name="getTotalCollateralExposureResponse" type="tns:getTotalCollateralExposureResponse"/>
+
+  <xs:element name="getTotalCreditExposure" type="tns:getTotalCreditExposure"/>
+
+  <xs:element name="getTotalCreditExposureDivAssets" type="tns:getTotalCreditExposureDivAssets"/>
+
+  <xs:element name="getTotalCreditExposureDivAssetsResponse" type="tns:getTotalCreditExposureDivAssetsResponse"/>
+
+  <xs:element name="getTotalCreditExposureResponse" type="tns:getTotalCreditExposureResponse"/>
+
+  <xs:element name="getTotalLCV" type="tns:getTotalLCV"/>
+
+  <xs:element name="getTotalLCVResponse" type="tns:getTotalLCVResponse"/>
+
+  <xs:element name="getTotalSecuredCreditExposure" type="tns:getTotalSecuredCreditExposure"/>
+
+  <xs:element name="getTotalSecuredCreditExposureResponse" type="tns:getTotalSecuredCreditExposureResponse"/>
+
+  <xs:element name="getTotalUnsecuredCreditExposure" type="tns:getTotalUnsecuredCreditExposure"/>
+
+  <xs:element name="getTotalUnsecuredCreditExposureResponse" type="tns:getTotalUnsecuredCreditExposureResponse"/>
+
+  <xs:element name="getUnsecuredCreditOvernight" type="tns:getUnsecuredCreditOvernight"/>
+
+  <xs:element name="getUnsecuredCreditOvernightResponse" type="tns:getUnsecuredCreditOvernightResponse"/>
+
+  <xs:element name="getUnsecuredCreditSwap" type="tns:getUnsecuredCreditSwap"/>
+
+  <xs:element name="getUnsecuredCreditSwapResponse" type="tns:getUnsecuredCreditSwapResponse"/>
+
+  <xs:element name="getUnsecuredCreditTerm" type="tns:getUnsecuredCreditTerm"/>
+
+  <xs:element name="getUnsecuredCreditTermResponse" type="tns:getUnsecuredCreditTermResponse"/>
+
+  <xs:element name="setCreditAvailabilityAmount" type="tns:setCreditAvailabilityAmount"/>
+
+  <xs:element name="setCreditAvailabilityAmountResponse" type="tns:setCreditAvailabilityAmountResponse"/>
+
+  <xs:element name="updateAdvanceExposureCalculationItem" type="tns:updateAdvanceExposureCalculationItem"/>
+
+  <xs:element name="updateAdvanceExposureCalculationItemResponse" type="tns:updateAdvanceExposureCalculationItemResponse"/>
+
+  <xs:element name="updateAdvanceExposureCalculationUsingList" type="tns:updateAdvanceExposureCalculationUsingList"/>
+
+  <xs:element name="updateAdvanceExposureCalculationUsingListResponse" type="tns:updateAdvanceExposureCalculationUsingListResponse"/>
+
+  <xs:complexType name="getTotalCreditExposure">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalCreditExposureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateAdvanceExposureCalculationUsingList">
+    <xs:sequence>
+      <xs:element name="AdvanceItemList" type="tns:exposureAdvance" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="UseSourceData" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureAdvance">
+    <xs:sequence>
+      <xs:element name="advanceTotal" type="xs:double" minOccurs="0"/>
+      <xs:element name="advanceTotalExcludeLHFS" type="xs:double" minOccurs="0"/>
+      <xs:element name="corporateSettlementNextAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="corporateSettlementNextDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="corporateSettlementNextMaturityAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="corporateSettlementNextMaturityDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="corporateSettlementsTotal" type="xs:double" minOccurs="0"/>
+      <xs:element name="LHFSAdvanceTotal" type="xs:double" minOccurs="0"/>
+      <xs:element name="LOCCorpSettlementNextAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LOCCorpSettlementNextDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="LOCCorpSettlementNextMaturityAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LOCCorpSettlementNextMaturityDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="LOCCorporateSettlementsTotal" type="xs:double" minOccurs="0"/>
+      <xs:element name="letterOfCreditTotal" type="xs:double" minOccurs="0"/>
+      <xs:element name="memberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateAdvanceExposureCalculationUsingListResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMemberLCV">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMemberLCVResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:exposureLCVResult" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureLCVResult">
+    <xs:sequence>
+      <xs:element name="isAffiliate" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="LCVAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVFactor" type="xs:int" minOccurs="0"/>
+      <xs:element name="memberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalAdvanceCredit">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalAdvanceCreditResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureResultsMemoPost">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureResultsMemoPostResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:calculationResults" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculationResults">
+    <xs:sequence>
+      <xs:element name="advanceTotalExcLHFSAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="advanceTotalIncLHFSAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="advancesDivAssets" type="xs:double" minOccurs="0"/>
+      <xs:element name="affiliateLCV" type="tns:exposureLCVResult" minOccurs="0"/>
+      <xs:element name="affiliateReliance" type="tns:exposureAffiliateRelianceResult" minOccurs="0"/>
+      <xs:element name="cashPledged" type="xs:double" minOccurs="0"/>
+      <xs:element name="collateralMaintenanceLevel" type="tns:exposureCMLResult" minOccurs="0"/>
+      <xs:element name="collateralMarketValue" type="xs:double" minOccurs="0"/>
+      <xs:element name="corporateSettlementsNextMaturityAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="corporateSettlementsNextMaturityDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="corporateSettlementsNextSettlementAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="corporateSettlementsNextSettlementDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="corporateSettlementsTotalAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="creditAvailability" type="tns:exposureCreditAvailabilityResult" minOccurs="0"/>
+      <xs:element name="creditAvailabilityDivAssets" type="xs:double" minOccurs="0"/>
+      <xs:element name="DIAOverdraftTotalAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="errorCode" type="xs:int" minOccurs="0"/>
+      <xs:element name="estPrepaymentFeesAmt" type="tns:exposureNPVResult" minOccurs="0"/>
+      <xs:element name="isError" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="LCVDivAdvances" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVDivCollateralMaintenanceLevel" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVDivProjTotalCollateralExposure" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVDivTotalCollateralExposure" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVExcess" type="xs:double" minOccurs="0"/>
+      <xs:element name="LHFSAdvanceTotalAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LHFSLCV" type="xs:double" minOccurs="0"/>
+      <xs:element name="LHFSLCVExcess" type="xs:double" minOccurs="0"/>
+      <xs:element name="LOCCorpSettlementsNextMaturityAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LOCCorpSettlementsNextMaturityDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="LOCCorpSettlementsNextSettlementAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LOCCorpSettlementsNextSettlementDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="LOCCorporateSettlementsTotalAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="letterOfCreditTotalAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="MPFCreditEnhancementTotalAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="memberID" type="xs:int" minOccurs="0"/>
+      <xs:element name="memberLCV" type="tns:exposureLCVResult" minOccurs="0"/>
+      <xs:element name="memberStandaloneDerivativeTotalAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="portfolioLCVList" type="tns:exposurePortfolioLCV" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="projCollateralMaintenanceLevel" type="xs:double" minOccurs="0"/>
+      <xs:element name="projLCVExcess" type="xs:double" minOccurs="0"/>
+      <xs:element name="projTotalCollateralExposure" type="xs:double" minOccurs="0"/>
+      <xs:element name="projTotalCollateralExposureDivAssets" type="xs:double" minOccurs="0"/>
+      <xs:element name="remainingCreditAvailabilityAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalAssetsAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalCollateralExposure" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalCollateralExposureDivAssets" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalCreditExposure" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalCreditExposureDivAssets" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalLCV" type="tns:exposureLCVResult" minOccurs="0"/>
+      <xs:element name="totalSecuredCreditExposure" type="xs:double" minOccurs="0"/>
+      <xs:element name="totalUnsecuredCreditExposure" type="xs:double" minOccurs="0"/>
+      <xs:element name="unsecuredCreditOvernightAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="unsecuredCreditSwapAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="unsecuredCreditTermAmt" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureAffiliateRelianceResult">
+    <xs:sequence>
+      <xs:element name="affiliateRelianceAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="affiliateRelianceFactor" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureCMLResult">
+    <xs:sequence>
+      <xs:element name="CMLAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="CMLFactor" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureCreditAvailabilityResult">
+    <xs:sequence>
+      <xs:element name="creditAvailabilityAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="creditAvailabilityFactor" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureNPVResult">
+    <xs:sequence>
+      <xs:element name="estPrepaymentFeesAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="estPrepaymentFeesDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="estPrepaymentFeesOption" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposurePortfolioLCV">
+    <xs:sequence>
+      <xs:element name="affiliateID" type="xs:int" minOccurs="0"/>
+      <xs:element name="assetLCV" type="tns:exposureAssetLCV" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="bookValueAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="CVRDueDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="CVRStartDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="CVRStatus" type="xs:string" minOccurs="0"/>
+      <xs:element name="extrapolationFactor" type="xs:double" minOccurs="0"/>
+      <xs:element name="freqency" type="xs:int" minOccurs="0"/>
+      <xs:element name="hasAgreement" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="isActive" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="LCVAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVFactor" type="xs:int" minOccurs="0"/>
+      <xs:element name="marketValueAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="portfolioCode" type="xs:string" minOccurs="0"/>
+      <xs:element name="portfolioType" type="xs:string" minOccurs="0"/>
+      <xs:element name="portfolioTypeID" type="xs:int" minOccurs="0"/>
+      <xs:element name="QCRDueDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="relianceFactor" type="xs:int" minOccurs="0"/>
+      <xs:element name="source" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureAssetLCV">
+    <xs:sequence>
+      <xs:element name="assetType" type="xs:string" minOccurs="0"/>
+      <xs:element name="assetTypeID" type="xs:int" minOccurs="0"/>
+      <xs:element name="instrumentLCV" type="tns:exposureInstrumentLCV" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="LCVAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVFactor" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureInstrumentLCV">
+    <xs:sequence>
+      <xs:element name="instrumentID" type="xs:string" minOccurs="0"/>
+      <xs:element name="LCVAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVPercent" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProjTotalCollateralExposureDivAssets">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProjTotalCollateralExposureDivAssetsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProjCollateralMaintenanceLevel">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProjCollateralMaintenanceLevelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalAdvanceCollateral">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalAdvanceCollateralResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureResultsFromSource">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureResultsFromSourceResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:calculationResults" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getRemainingCreditAvailability">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getRemainingCreditAvailabilityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVDivTotalCollateralExposure">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVDivTotalCollateralExposureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLHFSLCVExcess">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLHFSLCVExcessResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUnsecuredCreditTerm">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUnsecuredCreditTermResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVDivCollateralMaintenanceLevel">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVDivCollateralMaintenanceLevelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureUsingAdvance">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+      <xs:element name="AdvanceAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LetterOfCreditAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="CorporateSettlementAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LHFSAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LetterOfCreditCorporateSettlementAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="UseSourceData" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="IsReversal" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureUsingAdvanceResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getPortfolioLCVList">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getPortfolioLCVListResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:exposurePortfolioLCV" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getEstPrepaymentFees">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getEstPrepaymentFeesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:exposureNPVResult" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalLCV">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalLCVResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:exposureLCVResult" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMemberStandaloneDerivativeExposure">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMemberStandaloneDerivativeExposureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalCreditExposureDivAssets">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalCreditExposureDivAssetsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLHFSLCV">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLHFSLCVResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureUsingLCV">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+      <xs:element name="MemberLCVList" type="tns:exposureMemberLCV" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="CashPledged" type="xs:double" minOccurs="0"/>
+      <xs:element name="UseSourceData" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="exposureMemberLCV">
+    <xs:sequence>
+      <xs:element name="affiliateMemberID" type="xs:int" minOccurs="0"/>
+      <xs:element name="errorCode" type="xs:int" minOccurs="0"/>
+      <xs:element name="isError" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="LCVAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LCVFactor" type="xs:int" minOccurs="0"/>
+      <xs:element name="marketValue" type="xs:double" minOccurs="0"/>
+      <xs:element name="memberID" type="xs:int" minOccurs="0"/>
+      <xs:element name="portfolioLCV" type="tns:exposurePortfolioLCV" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureUsingLCVResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureMemoPost">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureMemoPostResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalUnsecuredCreditExposure">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalUnsecuredCreditExposureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCollateralMaintenanceLevel">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCollateralMaintenanceLevelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:exposureCMLResult" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalAssets">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalAssetsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVDivAdvances">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVDivAdvancesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAdvancesDivAssets">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAdvancesDivAssetsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDIAOverdraft">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDIAOverdraftResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalCollateralExposureDivAssets">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalCollateralExposureDivAssetsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProjLCVExcess">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProjLCVExcessResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureResultsUsingAdvance">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+      <xs:element name="AdvanceAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LetterOfCreditAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="CorporateSettlementAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LHFSAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="LetterOfCreditCorporateSettlementAmt" type="xs:double" minOccurs="0"/>
+      <xs:element name="UseSourceData" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="IsModel" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="IsReversal" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureResultsUsingAdvanceResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:calculationResults" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setCreditAvailabilityAmount">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+      <xs:element name="CreditAvailabilityAmount" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setCreditAvailabilityAmountResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVDivProjTotalCollaterallExposure">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVDivProjTotalCollaterallExposureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUnsecuredCreditSwap">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUnsecuredCreditSwapResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCreditAvailabilityDivAssets">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCreditAvailabilityDivAssetsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalSecuredCreditExposure">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalSecuredCreditExposureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCashPledged">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCashPledgedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAffiliateReliance">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAffiliateRelianceResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:exposureAffiliateRelianceResult" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCollateralMarketValue">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCollateralMarketValueResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLetterOfCreditCorporateSettlements">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLetterOfCreditCorporateSettlementsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureFromSource">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureFromSourceResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMPFCreditEnhancement">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMPFCreditEnhancementResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLHFSAdvance">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLHFSAdvanceResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVExcess">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLCVExcessResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateAdvanceExposureCalculationItem">
+    <xs:sequence>
+      <xs:element name="AdvanceItem" type="tns:exposureAdvance" minOccurs="0"/>
+      <xs:element name="UseSourceData" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateAdvanceExposureCalculationItemResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLetterOfCredit">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLetterOfCreditResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="checkStatus">
+    <xs:sequence>
+      <xs:element name="statusRows" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="checkStatusResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCorporateSettlements">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCorporateSettlementsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCreditAvailability">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCreditAvailabilityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:exposureCreditAvailabilityResult" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProjTotalCollateralExposure">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProjTotalCollateralExposureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalCollateralExposure">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTotalCollateralExposureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureFromSourceNoQueue">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureFromSourceNoQueueResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUnsecuredCreditOvernight">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUnsecuredCreditOvernightResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAllExposureCalculations">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAllExposureCalculationsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:calculationResults" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureResultsUsingLCV">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+      <xs:element name="MemberLCVList" type="tns:exposureMemberLCV" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="CashPledged" type="xs:double" minOccurs="0"/>
+      <xs:element name="UseSourceData" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateExposureResultsUsingLCVResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:calculationResults" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAffiliateLCV">
+    <xs:sequence>
+      <xs:element name="MemberID" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAffiliateLCVResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:exposureLCVResult" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
